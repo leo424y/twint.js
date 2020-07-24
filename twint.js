@@ -23,7 +23,7 @@ app.listen(8080, function () {
 });
 
 function twint(q,date) {
-  var query = `twint -es ${HOST}:9200 -s ${q} --since "${date} 00:00:00" --limit 10`
+  var query = `twint -es ${HOST}:9200 -s ${q} --since "${date} 00:00:00" --limit 100`
   exec(query, {
     cwd: ''
   }, (err, stdout, stderr) => {
