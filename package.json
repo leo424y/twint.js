@@ -1,0 +1,17 @@
+{
+  "name": "twints",
+  "version": "1.0.0",
+  "description": "",
+  "main": "twints",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jq": "^1.7.2",
+    "util": "^0.12.3",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
