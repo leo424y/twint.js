@@ -1,3 +1,5 @@
+const HOST = process.env.HOST;
+
 var express = require('express');
 const {
   exec
@@ -22,7 +24,7 @@ app.listen(8080, function () {
 });
 
 function twint(q,date) {
-  var query = `twint -es 35.194.129.109:9200 -s ${q} --since "${date} 00:00:00" --limit 10`
+  var query = `twint -es ${HOST}:9200 -s ${q} --since "${date} 00:00:00" --limit 10`
   exec(query, {
     cwd: ''
   }, (err, stdout, stderr) => {
