@@ -4,7 +4,6 @@ var express = require('express');
 const {
   exec
 } = require('child_process');
-var fs = require('fs');
 
 var app = express();
 app.get("/", function (req, res) {
